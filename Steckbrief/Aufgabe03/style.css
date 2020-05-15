@@ -1,0 +1,112 @@
+
+body {
+    background-image: url(taskmaterial/bg.png);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+/*navigation-style-->*/
+.nav {
+    
+    padding: 3px 4px 3px 6px;
+    border-radius: 0 0 4 4px;
+    background: black;
+    top: 0px;
+    position: fixed;
+    right: 0px;
+    
+}
+.navactiv {
+    border-right:  1px solid white;
+    padding-right: 4px;
+    color:rgb(0, 128, 122);
+}
+.navactivContact{
+    padding-right: 4px;
+    color:rgb(0, 128, 122);
+}
+.nav1 {
+    border-right:  1px solid white;
+    padding-right: 4px;
+}
+a {
+    text-decoration: none;
+    color: whitesmoke;
+} 
+a:hover {
+    color:rgb(0, 128, 122);
+}
+/*<--navigation-style*/
+.fb:hover{
+    opacity: 0.5;
+}
+.halbkreis {
+    margin-left: auto;
+    margin-right: auto;
+    width:500px;
+    margin-bottom: -10px;
+    margin-top: -10px;
+}
+.fb{ 
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 255px;
+    left: 23px;
+}
+
+.line1{
+    color:rgb(0, 128, 122);   
+    width: 800;
+    position: relative;
+    margin-right: 700px;
+}
+.line2 {
+    color:rgb(0, 128, 122); 
+    text-align: left;
+    margin-left: 100px;
+    position: static;
+}
+
+
+/*betrifft-nur-aboutme-->*/
+.text {      
+}
+/*<--betrifft-nur-aboutme*/
+
+/*betrifft-nur-contact-->*/
+
+.formular {
+    padding: 3px 4px 3px 6px;
+    color: whitesmoke;
+    background: lightgrey;
+    width: 250px;
+    margin: 7px 0px 7px 100px;
+    text-align: left;
+}
+.formular2 {
+    padding: 3px 4px 20px 6px;
+    color: whitesmoke;
+    background: lightgrey;
+    width: 400px;
+    margin: 7px 0px 7px 100px;
+    text-align: left;
+    
+}
+.unterformular {
+    padding: 3px 4px 20px 6px;
+    color: lightgrey;
+    width: 400px;
+    margin: 7px 0px 7px 100px;
+    text-align: left;
+
+}
+
+.formular3 {
+    padding: 3px 4px 3px 6px;
+    color: whitesmoke;
+    background: lightgrey;
+    width: 100px;
+    margin: 30px 0px 100px 100px;
+    text-align: left;
+}
+/*<--betrifft-nur-contact*/
