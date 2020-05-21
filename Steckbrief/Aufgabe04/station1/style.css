@@ -1,0 +1,36 @@
+body {
+    background-image: url(taskmaterial/bg.png);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    background-image: url(taskmaterial/wrapperbg.png);
+    height: 400px;
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -300px;
+}
+.text {
+    margin: 70px;
+    color: white;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+.pengu {
+    position: absolute;
+    left: 500px;
+    bottom: 10px; 
+}
+.shell {
+    position: absolute;
+    left: -60px;
+
+}
+
+

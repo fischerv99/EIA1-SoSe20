@@ -1,0 +1,36 @@
+body {
+    background-image: url(taskmaterial/bg.png);
+}
+
+.container {
+    background-image: url(taskmaterial/wrapperbg.png);
+    height: 400px;
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -300px;
+}
+.text1 {
+    margin: 70px;
+    margin-top: 40px;
+    column-count: 3;
+    column-gap: 30px;
+    column-rule-color: black;
+}
+.text2{
+    margin-left: 70px;
+    margin-top: -15px;
+    column-count: 2;
+    column-gap: 30px;
+}
+
+h1 {
+    margin: 70px 0 0 70px;
+    font-size: 25px;
+    color: white;
+}
+
+
+

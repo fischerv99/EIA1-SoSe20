@@ -1,0 +1,32 @@
+body {
+    background-image: url(taskmaterial/bg.png);
+}
+
+@font-face{
+    font-family: myFirstFont;
+    src: url(taskmaterial/fonts/jellyka_delicious_cake-webfont.woff);
+}
+.container {
+    background-image: url(taskmaterial/wrapperbg.png);
+    height: 400px;
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -300px;
+}
+.text {
+    margin: 70px;
+    color: white;
+    font-family: myFirstFont, Arial, Helvetica, sans-serif;
+    font-size: large;
+    line-height: 40px;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+
+

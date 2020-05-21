@@ -1,0 +1,80 @@
+body {
+    background-image: url(taskmaterial/bg.png);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    background-image: url(taskmaterial/wrapperbg.png);
+    height: 400px;
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -300px;
+}
+/* muschel1 */
+.muschel1{
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    background: url("taskmaterial/muschel.png") no-repeat;
+}
+
+.muschel1 .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.muschel1:hover .img-top {
+    display: inline;
+}
+/* muschel2 */
+.muschel2{
+    position: absolute;
+    top: 150px;
+    left: 250px;
+    background: url("taskmaterial/muschel.png") no-repeat;
+}
+
+.muschel2 .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.muschel2:hover .img-top {
+    display: inline;
+}
+/* muschel3 */
+
+.muschel3{
+    position: absolute;
+    top: 150px;
+    left: 350px;
+    background: url("taskmaterial/muschel.png") no-repeat;
+}
+
+.muschel3 .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.muschel3:hover .img-top {
+    display: inline;
+}
+
+.text{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px 0 0 60px;
+    font-size: 20px;
+}
+
+
+
+
+
+
+

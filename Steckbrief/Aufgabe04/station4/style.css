@@ -1,0 +1,37 @@
+body {
+    background-image: url(taskmaterial/bg.png);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    background-image: url(taskmaterial/wrapperbg.png);
+    height: 400px;
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -300px;
+}
+h1 {
+    margin: 70px;
+    font-size: 25px;
+    color: white;
+}
+
+.form {
+    margin-left: 70px;
+    margin-top: -35px;
+}
+.urlaub {
+    width: 300px;
+    height: 60px;
+}
+.last {
+    width: 80px;
+}
+
+
+
+
+
