@@ -1,5 +1,6 @@
 "use strict";
 /*EUROPA-----------------------*/
+console.group("Europa");
 console.log("Europa");
 var absoluteEuropa = 4209.3; /* Wert entnommen aus Tabelle: 2018->Europa */
 var relativeEuropa = 100 / (31116.5 / 4209); /* 100 / (Tabelle: alle Emissionswerte der Kontinente von 2018 / 2018->Europa)*/
@@ -9,7 +10,9 @@ console.log("Die Emission von Europa ist:" + absoluteEuropa + "kg CO2");
 console.log("Relativ zur Gesamtemission der Welt verursacht Europa damit" + relativeEuropa + "%");
 console.log("Für Europa hat sich 2018 im Vergleich zu 2008 die Emission um" + growthEuropa + "% verändert");
 console.log("2018 im Vergleich zu 2008 sind das" + growthabsoluteEuropa + "kg CO2");
+console.groupEnd("Europa");
 /*NORTHAMERICA------------------------*/
+console.group("Nordamerika");
 console.log("Nordamerika");
 var absoluteNord = 6035.6; /* 2018 */
 var relativeNord = 100 / (31116.5 / 6035.6); /* 100 / (alle 2018 / 2018)*/
@@ -19,7 +22,9 @@ console.log("Die Emission von Nordamerika ist:" + absoluteNord + "kg CO2");
 console.log("Relativ zur Gesamtemission der Welt verursacht Nordamerika damit" + relativeNord + "%");
 console.log("Für Nordamerika hat sich 2018 im Vergleich zu 2008 die Emission um" + growthNord + "% verändert");
 console.log("2018 im Vergleich zu 2008 sind das" + growthabsoluteNord + "kg CO2");
+console.groupEnd("Nordamerika");
 /*SOUTHAMERICA------------------------*/
+console.group("Südamerika");
 console.log("Südamerika");
 var absoluteSud = 1261.5; /* 2018 */
 var relativeSud = 100 / (31116.5 / 1261.5); /* 100 / (alle 2018 / 2018)*/
@@ -29,6 +34,7 @@ console.log("Die Emission von Südamerika ist:" + absoluteSud + "kg CO2");
 console.log("Relativ zur Gesamtemission der Welt verursacht Südamerika damit" + relativeSud + "%");
 console.log("Für Südamerika hat sich 2018 im Vergleich zu 2008 die Emission um" + growthSud + "% verändert");
 console.log("2018 im Vergleich zu 2008 sind das" + growthabsoluteSud + "kg CO2");
+console.groupEnd("Südamerika");
 /*AFRICA------------------------*/
 console.log("Afrika");
 var absoluteAfrika = 1235.5; /* 2018 */
