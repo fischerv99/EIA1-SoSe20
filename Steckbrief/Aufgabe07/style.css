@@ -1,0 +1,171 @@
+body {
+    background-color: #000000;
+    
+}
+
+.drumpad {
+    border: none;
+    height: 470px;
+    width: 470px;
+    margin: 0 auto;
+
+
+}
+
+.pad1{
+    width: 150px;
+    height: 150px;
+    background-color: #ff9191;
+    float: left;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+    border: none;  
+}
+
+    .pad1:hover{
+        background-color: #ff5555;
+    
+    }
+
+
+
+.pad2{
+    width: 150px;
+    height: 150px;
+    background-color: #81cbfd;
+    float: left;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    border: none;
+    }
+
+    .pad2:hover{
+        background-color: #0099ff;
+        
+    }
+
+.pad3{
+    width: 150px;
+    height: 150px;
+    background-color: #ff9191;
+    float: left;
+    border-radius: 5px;
+    margin-top: 5px;
+    border: none;
+    }
+    .pad3:hover{
+        background-color: #ff5555;
+        
+    }
+
+
+.pad4{
+        width: 150px;
+        height: 150px;
+        background-color: #81cbfd;
+        float: left;
+        border-radius: 5px;
+        margin-right: 5px;
+        margin-top: 5px;
+        margin-left: 5px;
+        border: none;
+    }
+    .pad4:hover{
+        background-color: #0099ff;
+        
+    }
+    
+.pad5{
+        width: 150px;
+        height: 150px;
+        background-color: #ff9191;
+        float: left;
+        border-radius: 5px;
+        margin-right: 5px;
+        margin-top: 5px;
+        border: none;
+        }
+        .pad5:hover{
+            background-color: #ff5555;
+            
+        }
+    
+.pad6{
+        width: 150px;
+        height: 150px;
+        background-color: #81cbfd;
+        float: left;
+        border-radius: 5px;
+        margin-top: 5px;
+        border: none;
+        }
+        .pad6:hover{
+            background-color: #0099ff;
+            
+        }
+
+.pad7{
+            width: 150px;
+            height: 150px;
+            background-color: #ff9191;
+            float: left;
+            border-radius: 5px;
+            margin-right: 5px;
+            margin-top: 5px;
+            margin-left: 5px;
+            border: none;
+        }
+        .pad7:hover{
+            background-color: #ff5555;
+            
+        }
+        
+.pad8{
+            width: 150px;
+            height: 150px;
+            background-color: #81cbfd;
+            float: left;
+            border-radius: 5px;
+            margin-right: 5px;
+            margin-top: 5px;
+            border: none;
+            }
+            .pad8:hover{
+                background-color: #0099ff;
+                
+            }
+        
+.pad9{
+            width: 150px;
+            height: 150px;
+            background-color: #ff9191;
+            float: left;
+            border-radius: 5px;
+            margin-top: 5px;
+            border: none;
+            }
+            .pad9:hover{
+                background-color: #ff5555;
+                
+            }
+.play { background: url(taskmaterial/play-button.png);
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 5px;
+    border: none;
+
+}
+
+img {
+    width: 100%;
+}
+
+
+
+
