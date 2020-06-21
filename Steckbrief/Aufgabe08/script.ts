@@ -36,6 +36,7 @@ function teilZwei(): void {
   }
 /*Dass beim Playbutton auch der Beat abspielt*/
 
+/*Ich weiß nicht, wo mein Fehler ist, dass die sounds nicht alle abgespielt werden.HELP*/ 
 function startBeatbyPlay(){
   beatIntervalId = setInterval(function() {
     playSample(4).play(); },400);
