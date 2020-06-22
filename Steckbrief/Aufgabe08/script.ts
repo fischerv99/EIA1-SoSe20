@@ -23,6 +23,7 @@ function playSample(Button_Nummer) {
     sound.play();
   }
 
+/*array für die drei sounds*/
 
 /*Dass der Playbutton zum Stopbutton wird*/
 function teilZwei(): void {
@@ -39,9 +40,9 @@ function teilZwei(): void {
 /*Ich weiß nicht, wo mein Fehler ist, dass die sounds nicht alle abgespielt werden.HELP*/ 
 function startBeatbyPlay(){
   beatIntervalId = setInterval(function() {
-    playSample(4).play(); },400);
-    playSample(5).play(); },600);
-    playSample(8).play(); },800); 
+    playSample(4); },500);
+    playSample(5); },500);
+    playSample(8); },400); 
 }
   
 /*Dass beim klick auf den Stopbutton der Beat angehalten wird*/
@@ -52,9 +53,11 @@ function stopBeatbyStop() {
 }
 
 /*Dass der Beat geleert wird*/
-function mulleimer():void {
-  allSounds = [4, 5, 8];
-}
+var definedsounds:string[] =  ["taskmaterial/hihat.mp3", "taskmaterial/kick.mp3","taskmaterial/snare.mp3"];
+function mulleimer(){
+  definedsounds = [];
+  
+ /* allSounds = [];*/
 /*Dass der Beat aufgenommen wird*/
 //inspiriert by Fiona
 var recording: boolean = false;

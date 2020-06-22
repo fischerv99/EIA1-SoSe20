@@ -17,6 +17,7 @@ window.addEventListener("load", function () {
         var sound = new Audio(allSounds[Button_Nummer]);
         sound.play();
     }
+    /*array für die drei sounds*/
     /*Dass der Playbutton zum Stopbutton wird*/
     function teilZwei() {
         var play = document.querySelector("#play");
@@ -32,15 +33,15 @@ window.addEventListener("load", function () {
         /*Ich weiß nicht, wo mein Fehler ist, dass die sounds nicht alle abgespielt werden.HELP*/
         function startBeatbyPlay() {
             beatIntervalId = setInterval(function () {
-                playSample(4).play();
-            }, 400);
-            playSample(5).play();
+                playSample(4);
+            }, 500);
+            playSample(5);
         }
-        600;
+        500;
     }
 });
-playSample(8).play();
-800;
+playSample(8);
+400;
 ;
 /*Dass beim klick auf den Stopbutton der Beat angehalten wird*/
 var beatIntervalId;
@@ -48,30 +49,32 @@ function stopBeatbyStop() {
     clearInterval(beatIntervalId);
 }
 /*Dass der Beat geleert wird*/
+var definedsounds = ["taskmaterial/hihat.mp3", "taskmaterial/kick.mp3", "taskmaterial/snare.mp3"];
 function mulleimer() {
-    allSounds = [4, 5, 8];
-}
-/*Dass der Beat aufgenommen wird*/
-//inspiriert by Fiona
-var recording = false;
-function recordbeat() {
-    if (recording == false) {
-        recording = true;
-        document.getElementById("#micro");
+    definedsounds = [];
+    /* allSounds = [];*/
+    /*Dass der Beat aufgenommen wird*/
+    //inspiriert by Fiona
+    var recording = false;
+    function recordbeat() {
+        if (recording == false) {
+            recording = true;
+            document.getElementById("#micro");
+        }
+        else {
+            recording = false;
+        }
     }
-    else {
-        recording = false;
-    }
-}
-function record() {
-    var play = document.querySelector("#rec");
-    if (play.getAttribute("id") == "micro") {
-        play.setAttribute("id", "rec");
-        recordbeat();
-    }
-    else {
-        play.setAttribute("id", "micro");
-        stopBeatbyStop();
+    function record() {
+        var play = document.querySelector("#rec");
+        if (play.getAttribute("id") == "micro") {
+            play.setAttribute("id", "rec");
+            recordbeat();
+        }
+        else {
+            play.setAttribute("id", "micro");
+            stopBeatbyStop();
+        }
     }
 }
 //# sourceMappingURL=script.js.map
