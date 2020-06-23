@@ -162,12 +162,12 @@ body {
     font-size: 110px;
     line-height: 150px;
 }
-#micro {
+#record {
     color: #ffffff;
     font-size: 110px;
     line-height: 150px;
     float: right;
 }
-#play:hover, #delete:hover, #micro:hover {
+#play:hover, #delete:hover, #record:hover {
     opacity: 0.5;
 }
