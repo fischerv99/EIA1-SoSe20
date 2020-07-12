@@ -1,4 +1,5 @@
 "use strict";
+// Grundlage für den Code: Vorlage#10 + Praktikum eia
 window.addEventListener("load", function () {
     const artyom = new Artyom();
     artyom.addCommands({
@@ -6,6 +7,9 @@ window.addEventListener("load", function () {
         smart: true,
         action: function (i, wildcard) {
             console.log("Neue Aufgabe wird erstellt: " + wildcard);
+            alert();
+            todoliste.unshift({ todoText: wildcard, todosChecked: false });
+            drawListToDOM();
         }
     });
     function startContinuousArtyom() {
@@ -23,45 +27,35 @@ window.addEventListener("load", function () {
         }, 250);
     }
     startContinuousArtyom();
-});
-const artyom = new Artyom();
-// Add a single command
-var commandHello = {
-    indexes: ["hello", "good morning", "hey"],
-    action: function () {
-        artyom.say("Hey buddy ! How are you today?");
-    }
-};
-artyom.addCommands(commandHello); // Add the command with addCommands method. Now
-// Or add multiple commands at time
-var myGroup = [
-    {
-        description: "If my database contains the name of a person say something",
-        smart: true,
-        // Ways to trigger the command with the voice
-        indexes: ["Do you know who is *", "I don't know who is *", "Is * a good person"],
-        // Do something when the commands is triggered
-        action: function (i, wildcard) {
-            var database = ["Carlos", "Bruce", "David", "Joseph", "Kenny"];
-            //If the command "is xxx a good person" is triggered do, else
-            if (i == 2) {
-                if (database.indexOf(wildcard.trim())) {
-                    artyom.say("I'm a machine, I dont know what is a feeling");
-                }
-                else {
-                    artyom.say("I don't know who is " + wildcard + " and i cannot say if is a good person");
-                }
-            }
-            else {
-                if (database.indexOf(wildcard.trim())) {
-                    artyom.say("Of course i know who is " + wildcard + ". A really good person");
-                }
-                else {
-                    artyom.say("My database is not big enough, I don't know who is " + wildcard);
+    // Add a single command
+    var commandHello = {
+        indexes: ["hello", "good morning", "hey"],
+        action: function () {
+            artyom.say("Hey buddy ! How are you today?");
+        }
+    };
+    artyom.addCommands(commandHello); // Add the command with addCommands method. Now
+    // Or add multiple commands at time
+    var myGroup = [
+        {
+            description: "If my database contains the name of a person say something",
+            smart: false,
+            // Ways to trigger the command with the voice
+            indexes: ["welche Aufgabe muss ich noch erledigen"],
+            // Do something when the commands is triggered
+            action: function () {
+                let task = [];
+                for (let index = 0; index < todoliste.length; index++) {
+                    if (todoliste[index].todosChecked) {
+                    }
+                    else {
+                        task.push(todoliste[index].todoText);
+                        console.log(todoliste[index].todoText);
+                    }
                 }
             }
         }
-    },
-    {}
-];
+    ];
+    artyom.addCommands(myGroup);
+});
 //# sourceMappingURL=script-playground-artyom.js.map

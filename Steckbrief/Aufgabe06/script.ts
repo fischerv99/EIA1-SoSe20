@@ -38,6 +38,7 @@ window.addEventListener("load", function() {
     function myeurope() {
     
         document.querySelector("#titleRegion").innerHTML = "Europe";
+              
         document.querySelector(".chart").setAttribute("style", "height:" + relativeEurope + "px")
     
         document.querySelector("#europa1").innerHTML = emissionAbsolutEurope;
@@ -54,6 +55,18 @@ window.addEventListener("load", function() {
     
     
         }
+
+        function myeurope_onmouseover() {
+    
+            document.querySelector("#titleRegion").innerHTML = "Europe Tlulala";
+            
+            }
+
+            function myeurope_onmouseover2() {
+    
+                document.querySelector("#titleRegion").innerHTML = "Europe Mouseover 2";
+                
+                }
     
     
     
@@ -122,7 +135,8 @@ window.addEventListener("load", function() {
             
         document.querySelector("#europa4").innerHTML = growthAbsoluteAfrica.toFixed(2);
         document.querySelector("#europa4text").innerHTML = "Growth rate between 2008 and 2018 (absolute)";
-            
+           
+        
         }
     
     
@@ -177,6 +191,9 @@ window.addEventListener("load", function() {
     
     
     document.querySelector(".europe").addEventListener("click", myeurope);
+    document.querySelector(".europe").addEventListener("dblclick", myeurope_onmouseover);
+    document.querySelector(".europe").addEventListener("mouseover", myeurope_onmouseover2);
+    
     document.querySelector(".northamerica").addEventListener("click", mynorthamerica);
     document.querySelector(".southamerica").addEventListener("click", mysouthamerica);
     document.querySelector(".africa").addEventListener("click", myafrica);

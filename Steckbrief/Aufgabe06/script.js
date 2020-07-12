@@ -36,6 +36,12 @@ window.addEventListener("load", function () {
         document.querySelector("#europa4").innerHTML = growthAbsoluteEurope.toFixed(2);
         document.querySelector("#europa4text").innerHTML = "Growth rate between 2008 and 2018 (absolute)";
     }
+    function myeurope_onmouseover() {
+        document.querySelector("#titleRegion").innerHTML = "Europe Tlulala";
+    }
+    function myeurope_onmouseover2() {
+        document.querySelector("#titleRegion").innerHTML = "Europe Mouseover 2";
+    }
     function mynorthamerica() {
         document.querySelector("#titleRegion").innerHTML = "North America";
         document.querySelector(".chart").setAttribute("style", "height:" + relativeNorthA + "px");
@@ -97,6 +103,8 @@ window.addEventListener("load", function () {
         document.querySelector("#europa4text").innerHTML = "Growth rate between 2008 and 2018 (absolute)";
     }
     document.querySelector(".europe").addEventListener("click", myeurope);
+    document.querySelector(".europe").addEventListener("dblclick", myeurope_onmouseover);
+    document.querySelector(".europe").addEventListener("mouseover", myeurope_onmouseover2);
     document.querySelector(".northamerica").addEventListener("click", mynorthamerica);
     document.querySelector(".southamerica").addEventListener("click", mysouthamerica);
     document.querySelector(".africa").addEventListener("click", myafrica);
